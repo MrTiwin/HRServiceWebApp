@@ -45,6 +45,8 @@ public class HRService {
         return connection;
     }
 
+    //Para toda entidad solo se maneje una conexion
+    //Quien solicite la conexion va a usar la misma conexion
     public RegionsEntity getRegionsEntity() {
         if(regionsEntity==null){
             regionsEntity = new RegionsEntity();
